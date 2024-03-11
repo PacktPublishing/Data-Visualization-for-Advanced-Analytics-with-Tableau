@@ -22,4 +22,4 @@ df = pd.DataFrame({
 })
 
 # Save the DataFrame to an Excel file for Tableau demo purposes
-df.to_excel('dummy_dataset.xlsx', index=True)
+df.to_excel('dummy_dataset.xlsx', index=False)
