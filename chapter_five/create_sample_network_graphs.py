@@ -4,13 +4,15 @@ import pandas as pd
 import random
 
 # Base file path where the Excel files will be saved (optional)
-base_path = "C:\\chapter_five_network_graphs"
+base_path = "C:\\tableau\\"
 
 # Function to generate a social network dataset
 def generate_social_network():
     users = [f"User_{i}" for i in range(1, 101)]
     friendships = [(random.choice(users), random.choice(users)) for _ in range(200)]
+    weights = [random.randint(1, 10) for _ in range(200)]  # Generate random weights
     df = pd.DataFrame(friendships, columns=['User', 'Friend'])
+    df['Weight'] = weights  # Add the weights as a third column
     df.to_excel(base_path + 'social_network.xlsx', index=False)
 
 # Function to generate a transportation network dataset
