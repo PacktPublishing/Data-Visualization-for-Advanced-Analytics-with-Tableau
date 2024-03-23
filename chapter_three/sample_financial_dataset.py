@@ -1,3 +1,5 @@
+# Sample data generated for financial analytics dashboard.
+# Imports
 import pandas as pd
 import numpy as np
 
@@ -32,5 +34,5 @@ df = pd.DataFrame({
 
 df
 
-# Save to Excel file to local machine (optional)
+# Convert and save dataframe as Excel file to local machine (optional)
 df.to_excel("C:\\chapter_threesample_data.xlsx")
