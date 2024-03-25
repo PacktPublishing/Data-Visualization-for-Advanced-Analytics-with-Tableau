@@ -26,4 +26,4 @@ correlation_matrix = df.corr()
 correlation_matrix.head()
 
 # Convert to Excel for Tableau import
-df.to_excel("C:\\Users\\blake\\Documents\\github\\tableau_github\\Data-Visualization-for-Advanced-Analytics-with-Tableau\\chapter_five\\corr_example.xlsx")
+df.to_excel("C:corr_example.xlsx")
