@@ -1,3 +1,5 @@
+# Create hotel dataset for chapter four.
+# Imports
 import pandas as pd
 import numpy as np
 import random
@@ -25,7 +27,7 @@ data = {
     'Number of Guests': np.random.randint(1, 5, size=num_records),
     'Duration (Days)': np.random.randint(1, 15, size=num_records),
     'Price per Night ($)': np.random.randint(50, 500, size=num_records),
-    'Total Revenue ($)': 0,  # Placeholder; to be calculated
+    'Total Revenue ($)': 0,  # Placeholder, to be calculated
     'City': np.random.choice(['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'], size=num_records),
     'Rating': np.random.choice([1, 2, 3, 4, 5], size=num_records, p=[0.05, 0.1, 0.4, 0.3, 0.15]),
     'Booking Source': np.random.choice(['Direct', 'Online Travel Agent', 'Walk-in', 'Corporate'], size=num_records)
